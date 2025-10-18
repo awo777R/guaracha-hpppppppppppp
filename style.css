@@ -1,0 +1,167 @@
+:root {
+  --accent: #ce0000;
+  --accent-dark: #a00000;
+  --bg: #121212;
+  --card: #1e1e1e;
+  --text: #fff;
+  --gray: #aaa;
+  --shadow: 0 0 15px rgba(255, 0, 0, 0.3);
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: radial-gradient(circle at top, #000 0%, #1a1a1a 80%);
+  color: var(--text);
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+header {
+  text-align: center;
+  background: linear-gradient(90deg, var(--accent-dark), var(--accent));
+  color: white;
+  padding: 25px 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+}
+
+header h1 {
+  margin: 0;
+  font-size: 1.8em;
+}
+
+header p {
+  margin-top: 6px;
+  font-weight: 300;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+  padding: 20px;
+}
+
+
+.dj-console {
+  text-align: center;
+  background: var(--card);
+  border-radius: 14px;
+  box-shadow: var(--shadow);
+  padding: 15px;
+  max-width: 500px;
+  width: 100%;
+}
+
+.dj-console img {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(255,0,0,0.4);
+}
+
+.caption {
+  color: var(--gray);
+  font-size: 14px;
+  margin-top: 8px;
+}
+
+
+.card {
+  width: 100%;
+  max-width: 450px;
+  background: var(--card);
+  border-radius: 14px;
+  box-shadow: var(--shadow);
+  padding: 20px;
+  text-align: center;
+}
+
+.card h2 {
+  color: var(--accent);
+}
+
+
+.music-player input[type="file"] {
+  width: 100%;
+  background: #2a2a2a;
+  color: var(--gray);
+  border: none;
+  border-radius: 8px;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+audio {
+  width: 100%;
+  margin-top: 15px;
+  border-radius: 10px;
+  background: #000;
+}
+
+
+.comments input, .comments textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 8px;
+  border-radius: 8px;
+  border: none;
+  background: #2a2a2a;
+  color: var(--text);
+  font-size: 14px;
+}
+
+textarea {
+  resize: none;
+  height: 80px;
+}
+
+button[type="submit"] {
+  background: var(--accent);
+  color: white;
+  border: none;
+  width: 100%;
+  padding: 12px;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: 0.3s;
+  box-shadow: 0 0 10px rgba(255,0,0,0.4);
+}
+
+button[type="submit"]:hover {
+  background: var(--accent-dark);
+  transform: scale(1.03);
+}
+
+#commentList {
+  list-style: none;
+  padding: 0;
+  margin-top: 15px;
+}
+
+#commentList li {
+  background: #2b2b2b;
+  padding: 10px;
+  margin-bottom: 8px;
+  border-radius: 8px;
+  border-left: 4px solid var(--accent);
+  font-size: 14px;
+}
+
+
+footer {
+  text-align: center;
+  padding: 15px;
+  font-size: 13px;
+  color: var(--gray);
+  background: #000;
+}
+
+
+@media (max-width: 600px) {
+  header h1 { font-size: 1.4em; }
+  .dj-console, .card { max-width: 95%; }
+  .caption { font-size: 12px; }
+}
